@@ -1,0 +1,5 @@
+[rlang]
+symbol = "R "
+
+[aws]
+disabled =  true
