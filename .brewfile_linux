@@ -1,0 +1,8 @@
+tap "homebrew/bundle"
+tap "homebrew/core"
+brew "chezmoi"
+brew "fd"
+brew "gh"
+brew "lsd"
+brew "ripgrep"
+brew "starship"

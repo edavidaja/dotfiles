@@ -1,0 +1,6 @@
+{{ if eq .chezmoi.os "darwin" }}
+{{   include ".brewfile_darwin" }}
+{{ end }}
+{{ if eq .chezmoi.os "linux" }}
+{{   include ".brewfile_linux" }}
+{{ end }}

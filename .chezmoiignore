@@ -1,0 +1,6 @@
+{{ if ne .chezmoi.os "darwin" }}
+.brewfile_darwin
+{{ end }}
+{{ if ne .chezmoi.os "linux" }}
+.brewfile_linux
+{{ end }}
