@@ -6,3 +6,12 @@ sso_role_name = PowerUser
 region = us-east-1
 output = json
 cli_pager=cat
+
+[profile soleng-fake-staging]
+sso_start_url = https://rstudio.awsapps.com/start
+sso_region = us-east-2
+sso_account_id = 075258722956
+sso_role_name = User
+region = us-west-2
+output = json
+cli_pager=cat
