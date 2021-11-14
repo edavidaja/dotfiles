@@ -4,3 +4,7 @@
 {{ if ne .chezmoi.os "linux" }}
 .brewfile_linux
 {{ end }}
+{{ if ne .chezmoi.os "windows" }}
+AppData/Roaming/RStudio/keybindings/editor_bindings.json
+AppData/Roaming/RStudio/keybindings/rstudio_bindings.json
+{{ end }}
