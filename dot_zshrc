@@ -1,0 +1,45 @@
+ZSH_DISABLE_COMPFIX="true"
+
+if [ -f ~/.aliases ]; then
+  source ~/.aliases
+fi
+
+if [ -f ~/.bitwarden ]; then
+  source ~/.bitwarden
+fi
+
+if [ -f ~/.commonrc ]; then
+  source ~/.commonrc
+fi
+
+eval "$(pyenv init -)"
+eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source /Users/edavidaja/.config/broot/launcher/bash/br
+
+# Created by `userpath` on 2020-11-03 21:32:45
+export PATH="$PATH:/Users/edavidaja/.local/bin"
+
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+
+export PIPENV_VENV_IN_PROJECT=1
+
+#### FIG ENV VARIABLES ####
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+
+export SSH_AUTH_SOCK=/Users/edavidaja/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+
+fpath+=~/.zfunc
+fpath=(~/.zsh $fpath)
+autoload -Uz compinit
+compinit -u
+
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
