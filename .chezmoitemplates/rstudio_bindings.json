@@ -1,0 +1,23 @@
+{{ if (eq .chezmoi.os "darwin") }}
+{
+    "showCommandPalette": "Shift+Cmd+P",
+    "joinLines": "Cmd+J",
+    "addCursorAbove": "Alt+Cmd+Up",
+    "addCursorBelow": "Alt+Cmd+Down",
+    "goToFileFunction": "Cmd+P",
+    "commentUncomment": "Cmd+/",
+    "newTerminal": "Alt+Shift+R",
+    "activateTerminal": "Ctrl+`"
+}
+{{ else }}
+{
+    "showCommandPalette": "Shift+Ctrl+P",
+    "joinLines": "Ctrl+J",
+    "addCursorAbove": "Alt+Ctrl+Up",
+    "addCursorBelow": "Alt+Ctrl+Down",
+    "goToFileFunction": "Ctrl+P",
+    "commentUncomment": "Ctrl+/",
+    "newTerminal": "Alt+Shift+R",
+    "activateTerminal": "Ctrl+`"
+}
+{{ end }}
