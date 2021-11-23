@@ -1,6 +1,4 @@
-tap "benbjohnson/litestream"
 tap "cue-lang/tap"
-tap "edavidaja/rstudio-pro"
 tap "hashicorp/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
@@ -13,7 +11,6 @@ tap "jakehilborn/jakehilborn"
 tap "remind101/formulae"
 tap "superfly/tap"
 tap "weaveworks/tap"
-tap "willdoescode/natls"
 brew "act"
 brew "angle-grinder"
 brew "gmp"
@@ -60,6 +57,7 @@ brew "k9s"
 brew "kind"
 brew "kubernetes-cli"
 brew "lsd"
+brew "mas"
 brew "miller"
 brew "minikube"
 brew "nushell"
@@ -141,3 +139,11 @@ cask "ticktick"
 cask "visual-studio-code-insiders"
 cask "vlc"
 cask "xquartz"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Irvue", id: 1039633667
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Spark", id: 1176895641
+mas "Xcode", id: 497799835
