@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+displayplacer "id:A2300F71-41B7-DB8F-2A1C-E1331135A87E res:2560x1440 hz:100 color_depth:8 scaling:off origin:(0,0) degree:0" "id:8F3515C6-03DF-4D5E-AEA8-A2F54B3EFC5D res:1440x2560 hz:100 color_depth:8 scaling:off origin:(-1440,0) degree:270"
+
