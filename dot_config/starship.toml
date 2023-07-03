@@ -1,5 +1,9 @@
+command_timeout = 1000
 [rlang]
 symbol = "R "
 
 [aws]
 disabled =  true
+
+[gcloud]
+disabled = true
