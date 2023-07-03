@@ -3,15 +3,43 @@ sso_start_url = https://rstudio.awsapps.com/start
 sso_region = us-east-2
 sso_account_id = 637485797898
 sso_role_name = PowerUser
+region = us-east-2
+output = json
+cli_pager=cat
+
+[profile main]
+sso_start_url = https://rstudio.awsapps.com/start
+sso_region = us-east-2
+sso_account_id = 263245908434
+sso_role_name = SolEngTeam
 region = us-east-1
 output = json
 cli_pager=cat
 
-[profile soleng-fake-staging]
+[profile sol-eng-staging]
+sso_start_url = https://rstudio.awsapps.com/start
+sso_region = us-east-2
+sso_account_id = 350573666743
+sso_role_name = User
+region = us-east-2
+output = json
+cli_pager=cat
+
+[profile evaluations]
+sso_start_url = https://rstudio.awsapps.com/start
+sso_region = us-east-2
+sso_account_id = 282421742317
+sso_role_name = PowerUser
+region = us-east-2
+output = json
+cli_pager=cat
+
+[profile sol-eng-prod]
 sso_start_url = https://rstudio.awsapps.com/start
 sso_region = us-east-2
 sso_account_id = 075258722956
 sso_role_name = User
-region = us-west-2
+region = us-east-1
 output = json
-cli_pager=cat
+cli_pager=
+
